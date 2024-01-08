@@ -3,6 +3,7 @@ import SlotsBase from './components/SlotsBase.vue';
 import SlotsSecond from './components/SlotsSecond.vue';
 import SlotsThird from './components/SlotsThird.vue';
 import SlotsFourth from './components/SlotsFourth.vue';
+import SlotsFifth from './components/SlotsFifth.vue';
 export default {
   data() {
     return {
@@ -14,6 +15,7 @@ export default {
     SlotsSecond,
     SlotsThird,
     SlotsFourth,
+    SlotsFifth
 }
 }
 </script>
@@ -44,6 +46,13 @@ export default {
       <p>内容 footer</p>
     </template>
   </SlotsFourth>
+  <hr>
+  <SlotsFifth>
+    <template #header="slotProps">
+      <p>{{ message }}</p>
+      <p>{{ slotProps.msg }}</p>
+    </template>
+  </SlotsFifth>
 </template>
 
 <style>

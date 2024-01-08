@@ -1,5 +1,5 @@
 <template>
-    <h3>Slot Fourth</h3>
+    <h3>Slots Fourth</h3>
     <slot name="header"></slot>
     <slot name="body"></slot>
     <slot name="footer"></slot>
